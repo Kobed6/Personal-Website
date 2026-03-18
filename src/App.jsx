@@ -83,8 +83,8 @@ function App() {
           <h3>CiCAidA, Drive Assist</h3>
           <p>
             As part of Stony Brook University's VIP Team "BEAR", I participated in the development of two projects (CiCAidA and Drive Assist) as a Full Stack Web Developer and
-            UI/UX Designer. My team has recently been working on building our own deployment of the mindLAMP platform, which includes patching many backend issues on the official
-            commits of the repository and adding custom activities.
+            UI/UX Designer. My team has recently been working on building our own deployment of the mindLAMP platform, which includes patching many backend issues that are on
+            the official commits of the repository and adding custom activities.
           </p>
           <img src={mindLAMPImg} width="70%" />
           <h3>9/11 Memorial & Museum</h3>
@@ -106,10 +106,10 @@ function App() {
 
           <h3>Vuck</h3>
           <p>
-            An action game project created using Unreal Engine, done as a team of two. My main role in the project was creating and animating 3D sc, including map props, enemy
-            design, and enemy attacks, as well as implementing AI behavior trees.
+            An action game project created using Unreal Engine, done as a team of two. I mainly created and animated 3D assets, including map props, enemy design, and enemy
+            attacks, as well as implemented AI behavior trees.
           </p>
-          <img src={mushroomImg} width="30%" />
+          <img src={mushroomImg} width="28%" />
           <img src={btImg} width="50%" />
 
           <h3>Phreddit</h3>
