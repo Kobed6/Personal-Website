@@ -37,8 +37,10 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Install threejs
-        run: npm i three
+      - name: Install R3F
+        run: npm i three @react-three/fiber
+      - name: Install drei
+        run: npm i @react-three/drei
       - name: Build
         run: npm run build
       - name: Setup Pages

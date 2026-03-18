@@ -1,0 +1,83 @@
+#bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#work img, #projects img {
+  margin: 1rem;
+}
+
+#about, #work, #projects {
+  scroll-margin-top: 100px;
+}
+
+.small {
+  width: 50%;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-self: flex-end;
+  margin-right: 4rem;
+}
+
+.center-content {
+  text-align: center;
+  justify-content: center;
+}
+
+.subsection {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 2rem;
+  background-color: var(--midnight-violet);
+}
+
+#technologies {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tech-main-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tech-subdiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+#links {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#links a {
+  width: fit-content;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--bright-lavender);
+  padding: 0.5rem;
+}
+
+.links-subcontainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
