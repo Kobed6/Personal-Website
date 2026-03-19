@@ -1,6 +1,5 @@
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
-  --spacing: 350px;
   --carbon-black: #1E1B18;
   --ash-gray: #BCD0C7;
   --shadow-gray: #32292F;
@@ -12,16 +11,94 @@
   font-style: normal;
 }
 
-h1 {
-  font-size: 3.5rem;
+@media (min-width: 320px) {
+  :root {
+    --spacing: 150px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  header {
+    margin: var(--spacing) 2rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 1.5rem 1.5rem 1.5rem 0rem;
+    gap: 1.5rem;
+  }
+
+  section {
+    padding: 0rem 1.5rem 1rem 1.5rem;
+    font-size: 0.75rem;
+    margin-left: 2rem;
+  }
 }
 
-h2 {
-  font-size: 2.5rem;
+@media (min-width: 768px) {
+  :root {
+    --spacing: 200px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    font-size: 1rem;
+  }
 }
 
-h3 {
-  font-size: 1.5rem;
+@media (min-width: 1024px) {
+  :root {
+    --spacing: 350px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    margin: var(--spacing) 8rem;
+  }
+
+  nav {
+    padding: 1.5rem 2.5rem 1.5rem 0rem;
+    gap: 2.5rem;
+  }
+
+  section {
+    padding: 2.5rem;
+    font-size: 1.25rem;
+    margin-left: 4rem;
+  }
 }
 
 body {
@@ -44,9 +121,7 @@ nav {
   width: 100%;
   background-color: var(--shadow-gray);
   justify-content: flex-end;
-  padding: 1.5rem 2.5rem 1.5rem 0rem;
   display: flex;
-  gap: 2.5rem;
   box-sizing: border-box;
 }
 
@@ -61,17 +136,13 @@ header {
   background: var(--carbon-black);
   border-radius: 1rem;
   padding: 2rem;
-  margin: var(--spacing) 8rem;
   line-height: 3rem;
 }
 
 section {
   width: 60%;
-  padding: 2.5rem;
   background: var(--dark-bg);
-  font-size: 1.25rem;
   line-height: 1.5;
-  margin-left: 4rem;
   margin-bottom: var(--spacing);
   border-radius: 2rem;
 }
