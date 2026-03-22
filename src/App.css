@@ -198,18 +198,18 @@ section {
 
 .tech-subsection {
   width: fit-content;
-  height: 60%;
+  height: clamp(35%, 25vw, 60%);
   display: flex;
   flex-direction: column;
   text-align: right;
   background-color: var(--midnight-violet);
-  padding: 1rem;
+  padding: clamp(0.5rem, 2vw, 1rem);
   margin-bottom: 1rem;
   justify-content: space-between;
 }
 
 .tech-subdiv {
-  padding: 0rem 1.5rem;
+  padding: 0rem clamp(0.5rem, 2vw, 1.25rem);
   display: flex;
   justify-content: flex-end;
   align-items: center;

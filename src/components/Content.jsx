@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import TabContent from './TabContent';
+import happyExpression from '/happy.png'
 
 export default function Content(props) {
   const [welcome, setWelcome] = useState(true);
@@ -35,7 +36,7 @@ export default function Content(props) {
     return (
       <>
         <p id="startText">Start</p>
-        <img id="start-button" src="/Personal-Website/happy.png" onClick={handleStart} />
+        <img id="start-button" src={happyExpression} onClick={handleStart} />
       </>
     )
   }
