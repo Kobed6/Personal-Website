@@ -42,18 +42,12 @@ export default function Technologies() {
         </section>
         <section className="tech-subsection">
           <div className="tech-subdiv">
-            <h3></h3>
-          </div>
-          <div className="tech-subdiv">
             <h3>Unreal Engine</h3>
             <img src={ueImg} width="40px" height="auto" />
           </div>
           <div className="tech-subdiv">
             <h3>Blender</h3>
             <img src={blenderImg} width="45px" height="auto" />
-          </div>
-          <div className="tech-subdiv">
-            <h3></h3>
           </div>
         </section>
       </div>

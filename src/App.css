@@ -2,28 +2,24 @@
   font-family: Consolas, monospace;
   font-size: clamp(0.5rem, 5vw, 2rem);
   --charcoal-blue: #324355;
-  --lavender-gray: #8E8DBE;
-  --frosted-blue: #A9E4EF;
-  --light-green: #81F495;
-  --lawn-green: #96F550;
-  --midnight-violet: #2E0014;
+  --lavender-gray: #8e8dbe;
+  --frosted-blue: #a9e4ef;
+  --light-green: #81f495;
+  --lawn-green: #96f550;
+  --midnight-violet: #2e0014;
   color: var(--lawn-green);
 }
 
 @media (min-width: 320px) {
-
   #links a {
     font-size: 1rem;
   }
-
 }
 
 @media (min-width: 768px) {
-
 }
 
 @media (min-width: 1024px) {
-
 }
 
 body {
@@ -67,11 +63,13 @@ h3 {
 #startText {
   font-size: 2rem;
   color: #0039a3;
-  animation: 0.8s step-end infinite alternate blinking
+  animation: 0.8s step-end infinite alternate blinking;
 }
 
 @keyframes blinking {
-  50% {opacity: 0%};
+  50% {
+    opacity: 0%;
+  }
 }
 
 #start-button {
@@ -95,7 +93,9 @@ h3 {
 }
 
 @keyframes typing {
-  from {width: 0};
+  from {
+    width: 0;
+  }
 }
 
 .main-container {
@@ -110,7 +110,9 @@ h3 {
 }
 
 @keyframes fadeIn {
-  from {opacity: 0};
+  from {
+    opacity: 0;
+  }
 }
 
 nav {
@@ -145,13 +147,13 @@ nav a:hover {
 }
 
 header {
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(0.75rem, 2vw, 1rem);
   line-height: clamp(1rem, 5vw, 2rem);
 }
 
 section {
   width: 60%;
-  line-height: 1.5rem;
+  line-height: clamp(1rem, 3vw, 1.5rem);
   border-radius: 1rem;
   font-size: clamp(0.5rem, 2vw, 1.25rem);
 }
@@ -198,14 +200,20 @@ section {
 
 .tech-subsection {
   width: fit-content;
-  height: clamp(35%, 25vw, 60%);
+  height: clamp(25vh, 25vw, 30vh);
   display: flex;
   flex-direction: column;
   text-align: right;
+  justify-content: center;
+  gap: clamp(0.5rem, 3vw, 1rem);
   background-color: var(--midnight-violet);
   padding: clamp(0.5rem, 2vw, 1rem);
   margin-bottom: 1rem;
-  justify-content: space-between;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+}
+
+.tech-subsection img {
+  width: clamp(20px, 3vw, 45px);
 }
 
 .tech-subdiv {
@@ -216,7 +224,8 @@ section {
   gap: 1rem;
 }
 
-#work, #projects {
+#work,
+#projects {
   width: 100%;
   font-size: clamp(0.5rem, 2vw, 0.75rem);
 }

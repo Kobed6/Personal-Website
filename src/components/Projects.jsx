@@ -15,7 +15,7 @@ export default function Projects(props) {
             <span className="projects-text-container">
               <p>
                 A web application analyzing the potential effects of repealing the Voting Rights Act on minority groups in the United States through graphical visualizations of
-                demographic and historial electoral data.
+                demographic, historial electoral data, and simulated district ensembles.
               </p>
             </span>
           </span>
