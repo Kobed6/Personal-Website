@@ -30,6 +30,7 @@ export default function App() {
   const [introFinished, setIntroFinished] = useState(false);
   const [startClicked, setStartClicked] = useState(false);
   const [doneZooming, setDoneZooming] = useState(false);
+  const [reset, setReset] = useState(false);
 
   return (
     <>
@@ -37,12 +38,12 @@ export default function App() {
         <Background />
         <ambientLight intensity={2} />
         <Suspense>
-          <Intro setIntroFinished={setIntroFinished} startClicked={startClicked} />
+          <Intro setIntroFinished={setIntroFinished} startClicked={startClicked} reset={reset} />
         </Suspense>
         {startClicked && <ZoomCamera doneZooming={doneZooming} setDoneZooming={setDoneZooming} />}
       </Canvas>
       <main>
-        {introFinished && <Content startClicked={startClicked} setStartClicked={setStartClicked} doneZooming={doneZooming} />}
+        {introFinished && <Content setIntroFinished={setIntroFinished} startClicked={startClicked} setStartClicked={setStartClicked} doneZooming={doneZooming} setDoneZooming={setDoneZooming} setReset={setReset} />}
       </main>
     </>
   );

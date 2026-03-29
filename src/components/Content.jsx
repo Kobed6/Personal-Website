@@ -6,20 +6,42 @@ export default function Content(props) {
   const [welcome, setWelcome] = useState(true);
   const [tab, setTab] = useState('About');
   const [page, setPage] = useState(1);
+  const [index, setIndex] = useState(0);
 
-  const tabs = ['About', 'Experience', 'Projects', 'Links'];
-  const tabPages = { 'About': 2, 'Experience': 2, 'Projects': 3, 'Links': 1 };
+  const tabs = [
+  {
+    name: 'About',
+    pages: 2,
+  },
+  {
+    name: 'Experience',
+    pages: 2,
+  },
+  {
+    name: 'Projects',
+    pages: 3,
+  },
+  {
+    name: 'Links',
+    pages: 1,
+  }];
 
   function prevPage() {
     if (page - 1 > 0)
       setPage(page - 1);
+    else {
+      if (index > 0)
+        switchTab(tabs[index - 1].name, tabs[index - 1].pages);
+    }
   }
 
   function nextPage() {
-    if (page < tabPages[tab])
+    if (page < tabs[index].pages)
       setPage(page + 1);
-    // else
-    //   switchTab()
+    else {
+      if (index < 3)
+        switchTab(tabs[index + 1].name, 1);
+    }
   }
 
   function handleStart() {
@@ -29,6 +51,31 @@ export default function Content(props) {
   function switchTab(tab, page) {
     setTab(tab);
     setPage(page);
+    switch (tab) {
+      case 'About':
+        setIndex(0)
+        break;
+      case 'Experience':
+        setIndex(1)
+        break;
+      case 'Projects':
+        setIndex(2)
+        break;
+      case 'Links':
+        setIndex(3)
+        break;
+    }
+  }
+
+  function handleReset() {
+    setWelcome(false);
+    setTab('About');
+    setPage(1);
+    setIndex(0);
+    props.setIntroFinished(false);
+    props.setStartClicked(false);
+    props.setDoneZooming(false);
+    props.setReset(true);
   }
 
   if (!props.startClicked && !props.doneZooming) {
@@ -51,7 +98,7 @@ export default function Content(props) {
           <div className='main-container'>
             <nav>
               <span id="reset-container">
-                <a id="reset-button">Reset</a>
+                <a id="reset-button" onClick={() => handleReset()}>Reset</a>
               </span>
               <span id="nav-buttons-container">
                 <a onClick={() => switchTab('About', 1)}>About</a>

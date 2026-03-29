@@ -29,7 +29,7 @@ export default function Intro(props) {
 
     mixer.current.addEventListener('finished', handleFinished);
 
-  }, []);
+  }, [props.reset]);
 
   useFrame((state, delta) => {
     if (!props.startClicked) {
