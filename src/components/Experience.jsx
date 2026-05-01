@@ -9,12 +9,12 @@ export default function Experience(props) {
           <h2>Work Experience - CiCAidA, Drive Assist</h2>
 
           <span className="work-main-container">
-            <img src={mindLAMPImg} width="30%" />
+            <img src={mindLAMPImg} width="25%" />
             <span className="work-text-container">
               <p>
-                As part of Stony Brook University's VIP Team "BEAR", I participated in the development of two projects (CiCAidA and Drive Assist) as a Full Stack Web Developer and
-                UI/UX Designer. My team has recently been working on building our own deployment of the mindLAMP platform, which includes patching many backend issues that are on
-                the official commits of the repository and adding custom activities.
+                As part of Stony Brook University's Bioengineering Education, Applications and Research team, I participated in the development of two projects (CiCAidA and Drive
+                Assist) as a Full Stack Web Developer. My team has recently been working on building our own deployment of the mindLAMP platform, which includes patching many
+                backend issues that are on the official commits of the repository and adding custom activities.
               </p>
             </span>
           </span>
