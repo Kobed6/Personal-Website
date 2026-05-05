@@ -1,5 +1,5 @@
 import vraImg from '/VRA.png';
-import vraSidebarImg from '/VRASidebar.png'
+import vraGinglesImg from '/VRAGingles.png'
 import mushroomImg from '/mushroom.png'
 import btImg from '/behaviorTree.png'
 import phredditImg from '/phreddit.png'
@@ -16,7 +16,7 @@ export default function Projects(props) {
           <span className="projects-main-container">
             <span className="projects-images-container">
               <img src={vraImg} width="40%" />
-              <img src={vraSidebarImg} width="40%" />
+              <img src={vraGinglesImg} width="40%" />
             </span>
             <span className="projects-text-container">
               <p>
